@@ -6,7 +6,14 @@ from supabase_connection import supabase
 # -------PRODUCTS TABLE--------
 # response = (
 #     supabase.table("products")
-#     .insert({"id": 2, "name": "et_colorido", "size": "PP", "collection_id": 1})
+#     .insert([{"id": 8, "name": "bandeira pt", "size": "PP", "collection_id": 3},
+#              {"id": 9, "name": "foice e martelo", "size": "M", "collection_id": 3},
+#              {"id": 10, "name": "mao fechada", "size": "P", "collection_id": 3},
+#              {"id": 11, "name": "mao fechada", "size": "M", "collection_id": 3},
+#              {"id": 12, "name": "unicornio gay", "size": "PP", "collection_id": 3},
+#              {"id": 13, "name": "coracao gay", "size": "PP", "collection_id": 3, "comments": "o corpo dele pode ser preto ou branco"},
+#              {"id": 14, "name": "coracao gay pastel", "size": "PP", "collection_id": 3, "comments": "o corpo dele pode ser preto ou branco"},
+#              {"id": 15, "name": "coracao gay dark", "size": "PP", "collection_id": 3, "comments": "o corpo dele pode ser preto ou branco"}])
 #     .execute()
 # )
 
@@ -27,7 +34,8 @@ from supabase_connection import supabase
 
 # response = (
 #     supabase.table("product_raw_materials")
-#     .insert({"raw_material_id": X, "product_id": "X", "raw_material_qntty": "X"})
+#     .insert([{"raw_material_id": 32, "product_id": 9, "raw_material_qntty": 89},
+#              ])
 #     .execute()
 # )
 
@@ -44,6 +52,7 @@ from supabase_connection import supabase
 
 # response = (
 #     supabase.table("raw_materials_type")
-#     .insert({"id": 9, "name": "hama bead hard"})
+#     .insert([{"id": 10, "name": "lapis"},
+#              {"id": 11, "name": "caneta"}])
 #     .execute()
 # )

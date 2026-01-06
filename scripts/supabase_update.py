@@ -6,8 +6,8 @@ from supabase_connection import supabase
 # -------PRODUCTS TABLE--------
 # response = (
 #     supabase.table("products")
-#     .update({"id": X, "name": "X", "size": "X", "collection_id": X})
-#     .eq("id", X)
+#     .update({"name": "et galaxia roxo e azul"})
+#     .eq("id", 2)
 #     .execute()
 # )
 
@@ -33,17 +33,17 @@ from supabase_connection import supabase
 
 # response = (
 #     supabase.table("raw_materials")
-#     .update({"comments": "codigo: toy factory 32"})
-#     .eq("id", 5)
+#     .update({"name": "verde folha"})
+#     .eq("id", 20)
 #     .execute()
 # )
 
 # -------RAW MATERIALS TYPE TABLE--------
 
-response = (
-    supabase.table("raw_materials_type")
-    .update(
-            {"name": "hama bead soft"})
-    .eq("id", 1)
-    .execute()
-)
+# response = (
+#     supabase.table("raw_materials_type")
+#     .update(
+#             {"name": "ferramentas para producao"})
+#     .eq("id", 6)
+#     .execute()
+# )
