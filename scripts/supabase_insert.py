@@ -4,17 +4,22 @@ from supabase_connection import supabase
 
 
 # -------PRODUCTS TABLE--------
-response = (
-    supabase.table("products")
-    .insert({"id": 2, "name": "et_colorido", "size": "PP", "collection_id": 1})
-    .execute()
-)
+# response = (
+#     supabase.table("products")
+#     .insert({"id": 2, "name": "et_colorido", "size": "PP", "collection_id": 1})
+#     .execute()
+# )
 
 # -------PRODUCT COLLECTIONS TABLE--------
 
 # response = (
 #     supabase.table("product_collections")
-#     .insert({"id": X, "name": "X"})
+#     .insert([
+#           {"id": 2, "name": "cerrado"},
+#           {"id": 3, "name": "democracia e respeito"},
+#           {"id": 4, "name": "pets"},
+#           {"id": 5, "name": "letras"},
+#           {"id": 6, "name": "desenhos"}])
 #     .execute()
 # )
 
@@ -29,8 +34,9 @@ response = (
 # -------RAW MATERIAL TABLE--------
 
 # response = (
-#     supabase.table("raw_material")
-#     .insert({"id": X, "type_id": X, "size": "X", "color": "X"})
+#     supabase.table("raw_materials")
+#     .insert([
+#         {"id": 52, "type_id": 1, "size": "2.6", "color": "vermelho alaranjado", "comments": "sem codigo"}])
 #     .execute()
 # )
 
@@ -38,6 +44,6 @@ response = (
 
 # response = (
 #     supabase.table("raw_materials_type")
-#     .insert({"id": X, "name": "X"})
+#     .insert({"id": 9, "name": "hama bead hard"})
 #     .execute()
 # )

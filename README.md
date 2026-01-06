@@ -23,5 +23,5 @@ Dentro do virtual enviroment:
 - Criar o arquivo `.env` onde irá colocar as informações do projeto do supabase (url de conexão e chave)
 - Criar um arquivo onde fará a conexão com o banco de dados (ex: `supabase_connection.py`)
 - Dentro de cada script específico, adicionar `from supabase_connection.py import supabase`
-- no terminal, rodar `python3 nome_do_script.py`
+- No terminal, rodar `python3 nome_do_script.py`
 

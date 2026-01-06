@@ -4,12 +4,12 @@ from supabase_connection import supabase
 
 
 # -------PRODUCTS TABLE--------
-response = (
-    supabase.table("products")
-    .update({"id": X, "name": "X", "size": "X", "collection_id": X})
-    .eq("id", X)
-    .execute()
-)
+# response = (
+#     supabase.table("products")
+#     .update({"id": X, "name": "X", "size": "X", "collection_id": X})
+#     .eq("id", X)
+#     .execute()
+# )
 
 # -------PRODUCT COLLECTIONS TABLE--------
 
@@ -24,7 +24,7 @@ response = (
 
 # response = (
 #     supabase.table("product_raw_materials")
-#     .insert({"raw_material_id": X, "product_id": "X", "raw_material_qntty": "X"})
+#     .update({"raw_material_id": X, "product_id": "X", "raw_material_qntty": "X"})
 #     .eq("id", X)
 #     .execute()
 # )
@@ -32,17 +32,18 @@ response = (
 # -------RAW MATERIAL TABLE--------
 
 # response = (
-#     supabase.table("raw_material")
-#     .insert({"id": X, "type_id": X, "size": "X", "color": "X"})
-#     .eq("id", X)
+#     supabase.table("raw_materials")
+#     .update({"comments": "codigo: toy factory 32"})
+#     .eq("id", 5)
 #     .execute()
 # )
 
 # -------RAW MATERIALS TYPE TABLE--------
 
-# response = (
-#     supabase.table("raw_materials_type")
-#     .insert({"id": X, "name": "X"})
-#     .eq("id", X)
-#     .execute()
-# )
+response = (
+    supabase.table("raw_materials_type")
+    .update(
+            {"name": "hama bead soft"})
+    .eq("id", 1)
+    .execute()
+)
